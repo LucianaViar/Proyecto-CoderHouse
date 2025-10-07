@@ -1,0 +1,315 @@
+/* ================== PÁGINA INICIO ================== */
+
+/* Fondo de toda la página */
+body {
+  background-color: #cecdcd;
+}
+
+/* Título principal (h1: StrongHer) */
+.navbar-brand {
+  color: #e255a3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+}
+
+.imagenFondo {
+  background-image: url("./imagenes/FondoPrincipal.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+/* ================== NAVEGADOR ================== */
+
+/* Cambiar color de fondo de toda la barra */
+.navbar {
+  background: transparent !important;
+}
+
+/* Cambiar color de los enlaces del nav */
+.navbar .nav-link {
+  color: #f8f8f8;
+}
+
+/* Cambiar color cuando pasás el mouse */
+.navbar .nav-link:hover {
+  color: #e255a3;
+}
+
+/* Cambiar color del link activo */
+.navbar .nav-link.active {
+  color: #e255a3;
+}
+
+/* Dropdown - color de fondo */
+.dropdown-menu {
+  background-color: #a7a5a2 !important;
+}
+
+/* Dropdown - links */
+.dropdown-menu .dropdown-item {
+  color: #353535;
+  font-family: 'Lexend', sans-serif;
+}
+
+/* Dropdown - hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f7a3d4;           
+  width: 100%;             
+}
+
+/* Separar los ítems entre sí */
+.navbar-nav > li {
+  margin-right: 30px;
+}
+
+.navbar .nav-link {
+  color: #f8f8f8;
+  font-family: 'Lexend', sans-serif;
+}
+
+/* ================== CONTENIDO DEL INICIO ================== */
+
+h1 {
+  background-size: cover;
+  text-align: left;
+  margin-top: 85px;
+  padding-left: 40px;
+  position: relative;
+  color: #ffffff;
+  font-family: 'Licorice', cursive;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+p {
+  color: #141414;
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Párrafos dentro de .inicio */
+.inicio p {
+  text-align: left;
+  padding-left: 40px;
+}
+
+/* Contenedor de video */
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.inicio button {
+  margin-left: 150px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: #e255a3a8;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Lexend', sans-serif;
+}
+
+.inicio button:hover {
+  background-color: #707070;
+}
+
+/* ================== ESTILO DEL ACORDEÓN ================== */
+
+h3 {
+  padding-left: 20px;
+  color: #141414;
+}
+
+/* Fondo del acordeón */
+.accordion-item {
+  background-color: #e0e0e0;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden; /* que no se desborde */
+}
+
+/* Encabezado de cada item */
+.accordion-button {
+  color: #2b2a2a;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: none; /* quita sombra azul */
+}
+
+/* Al pasar el mouse */
+.accordion-button:hover {
+  background-color: #e255a3;
+  color: #e7e7e7;
+}
+
+/* Cuando está abierto (activo) */
+.accordion-button:not(.collapsed) {
+  background-color: #e255a3;
+  color: #e7e7e7;
+}
+
+/* Cuerpo del acordeón */
+.accordion-body {
+  background-color: #e7e7e7;
+  color: #1a1919;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+#accordionPreguntas {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ================== FOOTER ================== */
+
+.footer {
+  padding: 50px 10px 0 20px; /* mantiene tus paddings actuales */
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  text-align: left;
+  margin: 5px 0 0 0;
+}
+
+/* ================== PÁGINA NOSOTRAS ================== */
+
+/* Subtítulo h2 */
+h2 {
+  color: #f1eddf;
+  font-family: 'Lexend', sans-serif;
+  font-size: 25px;
+  padding: 10px 1px 0; 
+  text-align: center;
+}
+
+/* Galería de imágenes */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05); /* Efecto zoom */
+}
+
+/* ================== PÁGINA MENÚ ================== */
+
+.menufondo {
+  background-color: #f3a1e1;
+  padding: 20px 40px;
+  margin: 70px auto;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+/* Texto de información */
+.informacion {
+  text-align: left;
+}
+
+/* Menú interno de la página */
+.menu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.menu li {
+  display: block;
+  margin: 8px 0;
+}
+
+/* Rutinas y nutrición */
+.rutinasynutricion p {
+  margin: 0;
+  padding: 5px 0 0 0;
+  font-size: 15px;
+  text-align: left;
+}
+
+.rutinasynutricion h2 {
+  padding-top: 70px;
+  margin: 10px 0 0 0;
+  text-align: left;
+}
+
+/* ================== PÁGINA DE CONTACTO ================== */
+
+/* Párrafo de contacto */
+.pcontacto {
+  font-size: 18px;
+}
+
+/* Fondo general del bloque de contacto */
+.fondoformulario {
+  background-color: #d6ccaf;
+}
+
+/* Subtítulo h2 dentro del formulario */
+.fondoformulario h2 {
+  color: #2c2a24;
+}
+
+/* Contenedor del formulario */
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+/* Formulario */
+.formulario form {
+  text-align: left;
+  list-style: none;
+}
+
+/* Espaciado entre campos */
+.formulario li {
+  margin-bottom: 15px;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: 'Lexend', sans-serif;
+  color: #2c2a24;
+}
+
+/* Campos de texto y área de texto */
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #221f1a;
+  border-radius: 5px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+}

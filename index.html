@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrongHer</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Lexend&family=Poiret+One&family=Story+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="imagenFondo">
+    <header>
+      <!-- ====== MENÚ DE NAVEGACIÓN ====== -->
+      <!-- Barra de navegación con Bootstrap -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid justify-content-end">
+
+          <!-- Logo dentro del nav -->
+          <a class="navbar-brand" href="index.html">StrongHer</a>
+
+          <!-- Botón que aparece en pantallas chicas para abrir/cerrar el menú -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Contenedor del menú que se colapsa en pantallas chicas -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              
+              <!-- Opción: Inicio -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">INICIO</a>
+              </li>
+
+              <!-- Opción: Nosotras -->
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/nosotras.html">NOSOTRAS</a>
+              </li>
+
+              <!-- Opción con menú desplegable: Menú -->
+              <li class="nav-item dropdown">
+                <!-- Al hacer click abre el dropdown -->
+                <a class="nav-link dropdown-toggle" href="./Paginas/menu.html" 
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </a>
+                
+                <!-- Elementos dentro del dropdown -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#info">Información</a></li>
+                  <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1-IoXh_XLTg-KxjfI5T84oCxzd36idIZw?usp=drive_link">Rutinas Principiantes</a></li>
+                  <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1W7zBFt8J2WFY8Sky1vYCUTfgAFJ3PxLu?usp=sharing">Rutinas Avanzadas</a></li>
+                  <li><a class="dropdown-item" href="https://youtu.be/RSqIvvrDPOg">Nutrición</a></li>
+                </ul>
+              </li>
+
+               <!-- Opción: Música -->
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/musica.html">PLAYLIST</a>
+              </li>
+
+              <!-- Opción: Contacto -->
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====== CONTENIDO DEL INICIO ====== -->
+    <main>
+      <section class="inicio">
+        <h1>La fuerza de ser Femenina</h1>
+        <p>
+          Durante años nos hicieron creer muchos mitos sobre <br>
+          ejercicio para las mujeres. El entrenamiento Femenino<br>
+          no es menos, es diferente. <br>
+          Este sitio nace para acompañarte a mejorar tu <br>
+          entrenamiento con información clara y real.
+        </p>
+        <button onclick="location.href='./Paginas/contacto.html'">QUIERO SABER MÁS</button>
+      </section>
+  </div>
+
+  <!-- ====== VIDEO DEL PRINCIPIO ====== -->
+  <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XW0SnJZOxWo?si=JSC1ctwShzgzUMl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <!-- ====== INFORMACIÓN ====== -->
+  <h3 id="info">Información</h3>
+  <div class="accordion" id="accordionPreguntas">
+
+    <!-- 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Hormonas femeninas y el entrenamiento
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" 
+           aria-labelledby="headingOne" data-bs-parent="#accordionPreguntas">
+        <div class="accordion-body">
+          El ciclo modifica al estrógeno y la progesterona y eso puede influir en cómo te sentís al entrenar: 
+          muchas mujeres notan días “picos” de energía cerca de la ovulación (estrógeno alto) y más
+          fatiga y calor en la fase lútea (progesterona alta). En la práctica, si durante la menstruación 
+          te duele o estás baja de energía, mantené la constancia con técnica y cargas moderadas; en la fase
+          folicular aprovechá para entrenar más fuerte y pesado, con sesiones más exigentes; 
+          en la fase lútea podés bajar 5–10% la carga o el volumen, alargar descansos y meter carbohidratos antes 
+          de entrenar; hidratate bien, controlar hierro/ferritina si tu sangrado es abundante 
+          y registrá tu ciclo para detectar tu patrón y ajustar sin perder progresión.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ¿Qué tipo de rutina es la adecuada para mí?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" 
+           aria-labelledby="headingTwo" data-bs-parent="#accordionPreguntas">
+        <div class="accordion-body">
+          Para empezar segura y progresar, puedes combinar fuerza 2–3 días a la semana (1–3 series de 8–12 repeticiones 
+          por ejercicio multiarticular como sentadilla, empuje, tracción y bisagra, dejando 1–3 repeticiones “en 
+          reserva”) con cardio unos 30 minutos diarios a intensidad media, sumá movilidad y aplicá 
+          sobrecarga progresiva sencilla (primero completá el rango de reps en todas las series 
+          y recién ahí subí un poco la carga). Muy importante es dormir bien, unas 7–9 horas. también debes separar al 
+          menos un día entre sesiones del mismo músculo y elegí una distribución que puedas sostener (por ejemplo, 3 días full-body o 2 días tren inferior 
+          + 1 día tren superior) para acumular repeticiones de calidad semana a semana.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Cuál es mi tipo de cuerpo?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" 
+           aria-labelledby="headingThree" data-bs-parent="#accordionPreguntas">
+        <div class="accordion-body">
+          Los somatotipos describen tu punto de partida pero no te limitan: el ectomorfo suele ser más delgado 
+          y le cuesta ganar masa; le conviene priorizar fuerza con multiarticulares, comer suficiente (ligero 
+          superávit calórico), repartir 1.6–2.2 g/kg/día de proteína y no exagerar con el cardio. El mesomorfo gana 
+          músculo con relativa facilidad, así que debería cuidar la técnica, progresar de forma ordenada y 
+          mantener hábitos de recuperación para sostener el ritmo. Por último, el endomorfo tiende a acumular grasa con 
+          facilidad, por lo que le sirve sostener la fuerza (clave para recomposición), vigilar porciones, subir 
+          pasos diarios y usar el cardio moderado y constante.
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          ¿Qué es la hipertrofia?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" 
+           aria-labelledby="headingFour" data-bs-parent="#accordionPreguntas">
+        <div class="accordion-body">
+          La hipertrofia es aumentar el tamaño del músculo mediante entrenamiento de fuerza bien planificado: 
+          empezá con 10–12 series semanales por grupo muscular (podés subir hacia 15–20 si recuperás bien), 
+          trabajá en 6–20 repeticiones por serie (8–12 es cómodo para iniciar), descansá 1–2 minutos en 
+          aislamientos y 2–3 en multiarticulares, entrená cada grupo al menos 2 veces por semana para practicar 
+          más y recuperarte mejor, comé proteína suficiente (1.6–2.2 g/kg/día), usá un leve superávit calórico 
+          si querés crecer (5–15%), considerá creatina monohidratada 3–5 g/día y planificá semanas más livianas 
+          (deload) cada 4–8 semanas si sentís fatiga acumulada o te estancás.
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          ¿Qué pasa si entreno durante el embarazo?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" 
+           aria-labelledby="headingSix" data-bs-parent="#accordionPreguntas">
+        <div class="accordion-body">
+          En embarazos sin complicaciones se recomienda hacer ejercicio, podrías comentar con 150 minutos semanales de cardio 
+          moderado (caminar ágil, bici fija, elíptica) y 2–3 sesiones de fuerza con ejercicios básicos 
+          (sentadillas, empujes, remos, bisagras y glúteos) a intensidad moderada. Evitá deportes de contacto o con riesgo de caída y estar mucho tiempo boca arriba 
+          desde el segundo trimestre, prestá atención a señales de alarma (sangrado, dolor abdominal, mareos, 
+          visión borrosa, contracciones regulares, pérdida de líquido), cuidá hidratación y temperatura, y 
+          trabajá respiración y suelo pélvico; siempre seguí las indicaciones de tu profesional de salud y 
+          ajustá según tus sensaciones.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <p>2025 StrongHer - Todos los derechos reservados</p>
+    <p>Seguinos en Instagram @strongher_gym</p>
+  </footer>
+  
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
