@@ -81,6 +81,13 @@ h1 {
   font-size: 80px;
   font-weight: 400;
 }
+h2 {
+  color: #f1eddf;
+  font-family: 'Lexend', sans-serif;
+  font-size: 25px;
+  padding: 10px 1px 0; 
+  text-align: center;
+}
 
 p {
   color: #141414;
@@ -188,12 +195,17 @@ h3 {
 /* ================== PÁGINA NOSOTRAS ================== */
 
 /* Subtítulo h2 */
-h2 {
-  color: #f1eddf;
+.tituloNosotras {
+  color: #e255a3;
   font-family: 'Lexend', sans-serif;
   font-size: 25px;
-  padding: 10px 1px 0; 
-  text-align: center;
+  margin-top: 30px;
+  text-align: center; 
+}
+.nosotrasBody {
+  background-image: url("./imagenes/FondoPrincipal.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Galería de imágenes */
@@ -217,99 +229,105 @@ h2 {
 
 .galeria img:hover {
   transform: scale(1.05); /* Efecto zoom */
+
+}
+/* ================== PÁGINA PLAYLIST ================== */
+.tituloPlaylist {
+  color: #e255a3;
+  font-family: 'Lexend', sans-serif;
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center; 
+}
+.playlists{
+  width: min(1100px, 92%);
+  margin: 24px auto;
 }
 
-/* ================== PÁGINA MENÚ ================== */
+/* 3 columnas en fila (horizontal) */
+.grid-3{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 
-.menufondo {
-  background-color: #f3a1e1;
-  padding: 20px 40px;
-  margin: 70px auto;
-  width: 80%;
-  max-width: 500px;
-  border-radius: 20px;
 }
 
-/* Texto de información */
-.informacion {
-  text-align: left;
+/* “Tarjeta” con puntas redondeadas */
+.spotify-card{
+  border-radius: 18px;
+  overflow: hidden;              /* para que el iframe respete el radio */
 }
 
-/* Menú interno de la página */
-.menu {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.menu li {
+/* Iframe alargado y sin borde */
+.spotify-card iframe{
   display: block;
-  margin: 8px 0;
-}
-
-/* Rutinas y nutrición */
-.rutinasynutricion p {
-  margin: 0;
-  padding: 5px 0 0 0;
-  font-size: 15px;
-  text-align: left;
-}
-
-.rutinasynutricion h2 {
-  padding-top: 70px;
-  margin: 10px 0 0 0;
-  text-align: left;
+  width: 100%;
+  height: 400px;                 /* más “fino”: ajustá 180–220px */
+  border: 0;
 }
 
 /* ================== PÁGINA DE CONTACTO ================== */
 
-/* Párrafo de contacto */
-.pcontacto {
-  font-size: 18px;
+/* --- Tarjeta del formulario --- */
+.card-form{
+  width: min(680px, 92%);
+  margin: 0 auto 48px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #f1efef;
 }
 
-/* Fondo general del bloque de contacto */
-.fondoformulario {
-  background-color: #d6ccaf;
+/* --- Listas y filas --- */
+.form-list { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+.form-row { 
+  margin-bottom: 16px; 
 }
 
-/* Subtítulo h2 dentro del formulario */
-.fondoformulario h2 {
-  color: #2c2a24;
-}
-
-/* Contenedor del formulario */
-.formulario {
-  display: flex;
-  justify-content: center;
-  margin: 40px auto;
-}
-
-/* Formulario */
-.formulario form {
-  text-align: left;
-  list-style: none;
-}
-
-/* Espaciado entre campos */
-.formulario li {
-  margin-bottom: 15px;
-}
-
-/* Etiquetas */
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+/* --- etiquetas --- */
+label{
+  display:block;
+  margin-bottom: 6px;
+  font-weight: 600;
   font-family: 'Lexend', sans-serif;
-  color: #2c2a24;
+  color:#ff61ca;
+  letter-spacing:.2px;
 }
 
-/* Campos de texto y área de texto */
-input,
-textarea {
-  padding: 8px;
-  border: 1px solid #221f1a;
-  border-radius: 5px;
+/* --- Inputs & textarea --- */
+input, textarea{
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
   font-family: 'Lexend', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
+
+/* Estado focus elegante */
+input:focus, textarea:focus{
+  outline: none;
+  border-color: #f7a3d4;
+}
+
+/* --- Botón primario --- */
+.btn-primary{
+  display:inline-block;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 12px;
+  font-weight: 700;
+  font-family: 'Lexend', sans-serif;
+  background: #f7a3d4;     
+  color: #1f1f1f;
+  cursor: pointer;
+}
+.btn-primary:hover{ 
+  background:#f48fc9; 
+}
+
+

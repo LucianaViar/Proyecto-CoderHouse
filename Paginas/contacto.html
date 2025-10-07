@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class = "nosotrasBody">
     <!-- Encabezado -->
     <header>
       <!-- ====== MENÚ DE NAVEGACIÓN ====== -->
@@ -77,7 +77,7 @@
                 <!-- Elementos dentro del dropdown -->
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#info">Información</a>
+                    <a class="dropdown-item" href="../index.html#info">Información</a>
                   </li>
                   <li>
                     <a
@@ -121,33 +121,38 @@
    
 <!-- Formulario -->
   <main>
-    <section class="fondoformulario">
-      <h2>Contacto</h2>
-      <p class="pcontacto">No dudes en ponerte en contacto con nosotras.</p>
-    <section class="formulario">
-    <ul>
-        <form action="/submit" method="post" >
+    <section class="contacto">
+  <div class="card-form">
+    <form>
+      <ul class="form-list">
+        <li class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Tu nombre" />
+        </li>
 
-        <li><label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre"></li>
-        
-        <li><label for="apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido"></li>
+        <li class="form-row">
+          <label for="apellido">Apellido</label>
+          <input id="apellido" type="text" placeholder="Tu apellido" />
+        </li>
 
-        <li><label for="email">Email</label>
-        <input type="email" id="email" name="email"></li>
+        <li class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="tunombre@mail.com" />
+        </li>
 
-        <li><label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje"></textarea></li>
+        <li class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4" placeholder="Contanos en qué podemos ayudarte"></textarea>
+        </li>
 
-        <li><button type="submit">Enviar</button></li>
-
-    </ul>
-        </form>
-    </section>
+        <li class="form-actions">
+          <button type="submit" class="btn-primary">Enviar</button>
+        </li>
+      </ul>
+    </form>
+  </div>
 </section>
-</main>
-
+  </main>
  <!-- ====== FOOTER ====== -->
     <footer class="footer">
       <p>2025 StrongHer - Todos los derechos reservados</p>
