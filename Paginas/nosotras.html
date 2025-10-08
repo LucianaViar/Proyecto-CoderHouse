@@ -22,11 +22,11 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="nosotrasBody">
     <!-- Encabezado -->
     <header>
       <!-- ====== MENÚ DE NAVEGACIÓN ====== -->
-      <!-- Barra de navegación con Bootstrap -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid justify-content-end">
           <!-- Logo dentro del nav -->
@@ -56,14 +56,13 @@
                 <a class="nav-link" href="../index.html">INICIO</a>
               </li>
 
-              <!-- Opción: Nosotras -->
+              <!-- Opción: Nosotras (actual) -->
               <li class="nav-item">
-                <a class="nav-link" href="#nosotras">NOSOTRAS</a>
+                <a class="nav-link active" aria-current="page" href="./nosotras.html">NOSOTRAS</a>
               </li>
 
               <!-- Opción con menú desplegable: Menú -->
               <li class="nav-item dropdown">
-                <!-- Al hacer click abre el dropdown -->
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -73,8 +72,6 @@
                 >
                   MENU
                 </a>
-
-                <!-- Elementos dentro del dropdown -->
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="../index.html#info">Información</a>
@@ -83,22 +80,16 @@
                     <a
                       class="dropdown-item"
                       href="https://drive.google.com/drive/folders/1-IoXh_XLTg-KxjfI5T84oCxzd36idIZw?usp=drive_link"
-                      >Rutinas Principiantes</a
-                    >
+                      >Rutinas Principiantes</a>
                   </li>
                   <li>
                     <a
                       class="dropdown-item"
                       href="https://drive.google.com/drive/folders/1W7zBFt8J2WFY8Sky1vYCUTfgAFJ3PxLu?usp=sharing"
-                      >Rutinas Avanzadas</a
-                    >
+                      >Rutinas Avanzadas</a>
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://youtu.be/RSqIvvrDPOg"
-                      >Nutrición</a
-                    >
+                    <a class="dropdown-item" href="https://youtu.be/RSqIvvrDPOg">Nutrición</a>
                   </li>
                 </ul>
               </li>
@@ -119,7 +110,7 @@
     </header>
 
     <!-- Contenido principal -->
-    <main>
+    <main id="nosotras">
       <section>
         <h2 class="tituloNosotras">Sobre Nosotras</h2>
         <p>

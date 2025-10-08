@@ -22,17 +22,17 @@
       rel="stylesheet"
     />
   </head>
-  <body class = "nosotrasBody">
+
+  <body class="nosotrasBody">
     <!-- Encabezado -->
     <header>
       <!-- ====== MENÚ DE NAVEGACIÓN ====== -->
-      <!-- Barra de navegación con Bootstrap -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid justify-content-end">
           <!-- Logo dentro del nav -->
           <a class="navbar-brand" href="../index.html">StrongHer</a>
 
-          <!-- Botón que aparece en pantallas chicas para abrir/cerrar el menú -->
+          <!-- Botón hamburguesa -->
           <button
             class="navbar-toggler"
             type="button"
@@ -45,25 +45,24 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Contenedor del menú que se colapsa en pantallas chicas -->
+          <!-- Contenedor del menú -->
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarNavDropdown"
           >
             <ul class="navbar-nav">
-              <!-- Opción: Inicio -->
+              <!-- Inicio -->
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">INICIO</a>
               </li>
 
-              <!-- Opción: Nosotras -->
+              <!-- Nosotras -->
               <li class="nav-item">
                 <a class="nav-link" href="./nosotras.html">NOSOTRAS</a>
               </li>
 
-              <!-- Opción con menú desplegable: Menú -->
+              <!-- Menú desplegable -->
               <li class="nav-item dropdown">
-                <!-- Al hacer click abre el dropdown -->
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -73,8 +72,6 @@
                 >
                   MENU
                 </a>
-
-                <!-- Elementos dentro del dropdown -->
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="../index.html#info">Información</a>
@@ -94,21 +91,19 @@
                     >
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://youtu.be/RSqIvvrDPOg"
+                    <a class="dropdown-item" href="https://youtu.be/RSqIvvrDPOg"
                       >Nutrición</a
                     >
                   </li>
                 </ul>
               </li>
 
-              <!-- Opción: Música -->
+              <!-- Música -->
               <li class="nav-item">
-                <a class="nav-link" href="#">PLAYLIST</a>
+                <a class="nav-link active" aria-current="page" href="./musica.html">PLAYLIST</a>
               </li>
 
-              <!-- Opción: Contacto -->
+              <!-- Contacto -->
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">CONTACTO</a>
               </li>
@@ -117,42 +112,49 @@
         </div>
       </nav>
     </header>
-<main>
+
     <main>
-  <section class="playlists">
-    <h2 class="tituloPlaylist">Playlists</h2>
+      <section class="playlists">
+        <h2 class="tituloPlaylist">Playlists</h2>
 
-    <div class="grid-3">
-      <!-- 1 -->
-      <div class="spotify-card">
-        <iframe data-testid="embed-iframe"
-          src="https://open.spotify.com/embed/playlist/477IwhbS4JmstiuhkZgfXK?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
-      </div>
+        <div class="grid-3">
+          <!-- 1 -->
+          <div class="spotify-card">
+            <iframe
+              data-testid="embed-iframe"
+              src="https://open.spotify.com/embed/playlist/477IwhbS4JmstiuhkZgfXK?utm_source=generator&theme=0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Playlist 1"
+            ></iframe>
+          </div>
 
-      <!-- 2 -->
-      <div class="spotify-card">
-        <iframe data-testid="embed-iframe"
-          src="https://open.spotify.com/embed/playlist/5Epnfl9GcJOnCqISHDp8QC?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
-      </div>
+          <!-- 2 -->
+          <div class="spotify-card">
+            <iframe
+              data-testid="embed-iframe"
+              src="https://open.spotify.com/embed/playlist/5Epnfl9GcJOnCqISHDp8QC?utm_source=generator&theme=0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Playlist 2"
+            ></iframe>
+          </div>
 
-      <!-- 3 -->
-      <div class="spotify-card">
-        <iframe data-testid="embed-iframe"
-          src="https://open.spotify.com/embed/playlist/4NRcVeC8VhHbDRLuR9s8HK?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
-</main>
+          <!-- 3 -->
+          <div class="spotify-card">
+            <iframe
+              data-testid="embed-iframe"
+              src="https://open.spotify.com/embed/playlist/4NRcVeC8VhHbDRLuR9s8HK?utm_source=generator&theme=0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Playlist 3"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-</main>
-<!-- ====== FOOTER ====== -->
+    <!-- ====== FOOTER ====== -->
     <footer class="footer">
       <p>2025 StrongHer - Todos los derechos reservados</p>
       <p>Seguinos en Instagram @strongher_gym</p>

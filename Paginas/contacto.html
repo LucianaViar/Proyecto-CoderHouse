@@ -22,11 +22,11 @@
       rel="stylesheet"
     />
   </head>
-  <body class = "nosotrasBody">
+
+  <body class="nosotrasBody">
     <!-- Encabezado -->
     <header>
       <!-- ====== MENÚ DE NAVEGACIÓN ====== -->
-      <!-- Barra de navegación con Bootstrap -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid justify-content-end">
           <!-- Logo dentro del nav -->
@@ -63,7 +63,6 @@
 
               <!-- Opción con menú desplegable: Menú -->
               <li class="nav-item dropdown">
-                <!-- Al hacer click abre el dropdown -->
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -74,7 +73,6 @@
                   MENU
                 </a>
 
-                <!-- Elementos dentro del dropdown -->
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="../index.html#info">Información</a>
@@ -94,9 +92,7 @@
                     >
                   </li>
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://youtu.be/RSqIvvrDPOg"
+                    <a class="dropdown-item" href="https://youtu.be/RSqIvvrDPOg"
                       >Nutrición</a
                     >
                   </li>
@@ -108,9 +104,9 @@
                 <a class="nav-link" href="./musica.html">PLAYLIST</a>
               </li>
 
-              <!-- Opción: Contacto -->
+              <!-- Opción: Contacto (actual) -->
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
+                <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -118,42 +114,42 @@
       </nav>
     </header>
 
-   
-<!-- Formulario -->
-  <main>
-    <section class="contacto">
-  <div class="card-form">
-    <form>
-      <ul class="form-list">
-        <li class="form-row">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" type="text" placeholder="Tu nombre" />
-        </li>
+    <!-- Formulario -->
+    <main>
+      <section class="contacto">
+        <div class="card-form">
+          <form>
+            <ul class="form-list">
+              <li class="form-row">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Tu nombre" />
+              </li>
 
-        <li class="form-row">
-          <label for="apellido">Apellido</label>
-          <input id="apellido" type="text" placeholder="Tu apellido" />
-        </li>
+              <li class="form-row">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" type="text" placeholder="Tu apellido" />
+              </li>
 
-        <li class="form-row">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="tunombre@mail.com" />
-        </li>
+              <li class="form-row">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="tunombre@mail.com" />
+              </li>
 
-        <li class="form-row">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" rows="4" placeholder="Contanos en qué podemos ayudarte"></textarea>
-        </li>
+              <li class="form-row">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="4" placeholder="Contanos en qué podemos ayudarte"></textarea>
+              </li>
 
-        <li class="form-actions">
-          <button type="submit" class="btn-primary">Enviar</button>
-        </li>
-      </ul>
-    </form>
-  </div>
-</section>
-  </main>
- <!-- ====== FOOTER ====== -->
+              <li class="form-actions">
+                <button type="submit" class="btn-primary">Enviar</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
     <footer class="footer">
       <p>2025 StrongHer - Todos los derechos reservados</p>
       <p>Seguinos en Instagram @strongher_gym</p>
