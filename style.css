@@ -56,7 +56,6 @@ body{
 }
 .dropdown-menu .dropdown-item:hover{
   background-color:#f7a3d4;
-  /* width:100%;  — eliminado por redundante */
 }
 
 /* Separación entre ítems del nav */
@@ -185,17 +184,57 @@ h3{
 }
 
 /* ================== FOOTER ================== */
-
-.footer{
-  background-color:#e255a3;
-  padding:30px;
-  margin-top:120px;
+.footer {
+  background-color: #0f0f10;              
+  color: #f8f8f8;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;                        
+  gap: 20px;
+  border-top: 4px solid #e255a3;          
+  margin-top: 70px;
 }
 
-.footer p{
-  font-size:14px;
-  text-align:left;
-  margin:5px 0 0 0;
+/* Marca o título */
+.footer-brand {
+  font-family: 'Lexend', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e255a3;
+  letter-spacing: 0.5px;
+}
+
+/* Contenedor de redes sociales */
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* Íconos de redes */
+.footer-social img {
+  width: 60px;
+  height: 70px;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Texto legal */
+.footer-legal {
+  color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+  font-family: 'Lexend', sans-serif;
 }
 
 /* ================== PÁGINA NOSOTRAS ================== */
@@ -250,7 +289,7 @@ body:not(.nosotrasBody){
 .tituloPlaylist{
   color:#e255a3;
   font-family:'Lexend',sans-serif;
-  font-size:25px;
+  font-size: 45px;
   margin-top:30px;
   text-align:center;
 }
@@ -272,6 +311,11 @@ body:not(.nosotrasBody){
 .spotify-card{
   border-radius:18px;
   overflow:hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotify-card:hover {
+  transform: scale(1.03);
 }
 
 /* Iframe */
@@ -294,8 +338,14 @@ body:not(.nosotrasBody){
 }
 
 /* Listas y filas */
-.form-list{ list-style:none; padding:0; margin:0; }
-.form-row{ margin-bottom:16px; }
+.form-list{ 
+  list-style:none; 
+  padding:0; 
+  margin:0; 
+}
+.form-row{ 
+  margin-bottom:16px; 
+}
 
 /* Etiquetas */
 label{
@@ -336,7 +386,7 @@ input:focus,textarea:focus{
   cursor:pointer;
 }
 .btn-primary:hover{
-  background:#f48fc9;
+  background:#f552ae;
 }
 
 /* ===== Sticky footer (todas las páginas) ===== */
@@ -345,18 +395,39 @@ body{
   display:flex;
   flex-direction:column;
 }
-main{ flex:1 0 auto; }
-.footer{ flex-shrink:0; }
+main{ 
+  flex:1 0 auto; 
+}
+.footer{ 
+  flex-shrink:0; 
+}
 
+/*  Para que el texto sea visible con el menú hamburguesa (≤990px) */
+@media (max-width:990px){
+  .navbar-brand{
+  color: #000;
+  text-shadow: 
+    -1px -1px 0 #e255a3,
+     1px  1px 0 #e255a3;
+}
+  .navbar{ 
+    padding:8px 16px; 
+  }
+
+  .navbar-collapse{ 
+    text-align:right; 
+  }
+  .navbar-nav{ 
+    margin-left:auto; 
+    align-items:flex-end; 
+  }
+  .navbar-nav .nav-link{ 
+    text-align:right; 
+    justify-content:flex-end; 
+  }
+}
 /* ================== CELULARES (≤576px) ================== */
 @media (max-width:576px){
-
-  /* NAVBAR */
-  .navbar{ padding:8px 16px; }
-  .navbar-brand{ color:#1f1f1f; }
-  .navbar-collapse{ text-align:right; }
-  .navbar-nav{ margin-left:auto; align-items:flex-end; }
-  .navbar-nav .nav-link{ text-align:right; justify-content:flex-end; }
 
   /* Márgenes laterales cómodos */
   main,section,.video,.playlists,.card-form,#accordionPreguntas,.galeria,.footer{
@@ -365,10 +436,20 @@ main{ flex:1 0 auto; }
   }
 
   /* Tipografías y espaciados */
-  h1{ margin:16px; padding-left:0; font-size:32px; }
-  h2{ font-size:18px; }
-  p{ font-size:15px; margin:10px 0; }
-  .inicio p{ padding-left:0; }
+  h1{ 
+    margin:16px; 
+    padding-left:0; 
+    font-size:32px; }
+  h2{ 
+    font-size:18px; 
+  }
+  p{ 
+    font-size:15px; 
+    margin:10px 0; 
+  }
+  .inicio p{ 
+    padding-left:0; 
+  }
 
   .video{ padding:12px 0; }
 
@@ -382,10 +463,28 @@ main{ flex:1 0 auto; }
   }
 
   /* MÚSICA */
-  .playlists{ margin-bottom:0; padding-bottom:8px; }
-  .grid-3{ grid-template-columns:1fr; gap:16px; margin-top:20px; }
-  .spotify-card:last-child{ margin-bottom:0; }
-  .spotify-card iframe{ height:210px; }
+  .playlists{ 
+    margin-bottom:0; 
+    padding-bottom:8px; 
+  }
+  .grid-3{ 
+    grid-template-columns:1fr; 
+    gap:16px; 
+    margin-top:20px; 
+  }
+  .spotify-card:last-child{ 
+    margin-bottom:0; 
+  }
+  .spotify-card iframe{ 
+    height:210px; 
+  }
+  
+  /*efecto touch para celulares*/
+  .spotify-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 18px;
+    overflow: hidden;
+  }
 
   /* NOSOTRAS */
   .galeria{
@@ -395,22 +494,52 @@ main{ flex:1 0 auto; }
     max-width:100%;
     margin-bottom:8px;
   }
-  .galeria img{ height:140px; }
-
-  /* CONTACTO */
-  .card-form{ margin-bottom:8px; }
-
-  /* Empuje final */
-  main{ padding-bottom:8px; }
-
-  /* Footer compacto y centrado */
-  .footer{
-    margin-top:0;
-    margin-bottom:0;
-    padding:18px 0;
-    text-align:center;
+  .galeria img{ 
+    height:140px; 
   }
-  .footer p{ margin:4px 0; font-size:13px; text-align:center; }
+
+/* CONTACTO */
+  .card-form{ 
+    margin-bottom:8px; 
+  }
+
+/* ===== empujar el footer en todas las paginas ===== */
+  body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+  }
+
+  main{ 
+    flex: 1; 
+  }       
+  .footer{ 
+    margin-top: auto; 
+    flex-shrink: 0; 
+  }
+
+/* Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 16px;
+    margin-top: 60px;
+  }
+
+  .footer-brand {
+    font-size: 22px;
+  }
+
+  .footer-social img {
+    width: 40px;
+    height: 50px;
+  }
+
+  .footer-legal {
+    justify-content: center;
+    font-size: 13px;
+  }
 
   /* INDEX */
   .imagenFondo{
@@ -438,4 +567,5 @@ main{ flex:1 0 auto; }
     width:90%;
     max-width:240px;
   }
-}
+ }
+  
