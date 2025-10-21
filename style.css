@@ -1,9 +1,11 @@
 /* ================== PÁGINA INICIO ================== */
 
+
 /* Fondo de toda la página */
 body{
   background-color:#cecdcd;
 }
+
 
 /* Título principal (StrongHer) */
 .navbar-brand{
@@ -11,6 +13,7 @@ body{
   font-family:'Lexend',sans-serif;
   font-size:30px;
 }
+
 
 .imagenFondo{
   background-image:url("./imagenes/FondoPrincipal.jpg");
@@ -23,12 +26,15 @@ body{
   justify-content:flex-start;
 }
 
+
 /* ================== NAVEGADOR ================== */
+
 
 /* Barra */
 .navbar{
   background:transparent !important;
 }
+
 
 /* Links del nav (única regla) */
 .navbar .nav-link{
@@ -36,15 +42,18 @@ body{
   font-family:'Lexend',sans-serif;
 }
 
+
 /* Hover de links */
 .navbar .nav-link:hover{
   color:#e255a3;
 }
 
+
 /* Link activo */
 .navbar .nav-link.active{
   color:#e255a3;
 }
+
 
 /* Dropdown */
 .dropdown-menu{
@@ -58,24 +67,28 @@ body{
   background-color:#f7a3d4;
 }
 
+
 /* Separación entre ítems del nav */
 .navbar-nav>li{
   margin-right:30px;
 }
 
+
 /* ================== CONTENIDO DEL INICIO ================== */
+
 
 h1{
   /* background-size:cover; — eliminado: no hay background en h1 */
   text-align:left;
   margin-top:85px;
-  padding-left:40px;
+  padding-left:50px;
   position:relative;
   color:#ffffff;
   font-family:'Licorice',cursive;
   font-size:80px;
   font-weight:400;
 }
+
 
 h2{
   color:#f1eddf;
@@ -85,6 +98,7 @@ h2{
   text-align:center;
 }
 
+
 p{
   color:#141414;
   font-family:'Lexend',sans-serif;
@@ -93,18 +107,22 @@ p{
   text-align:center;
 }
 
+
 /* Párrafos dentro de .inicio */
 .inicio p{
   text-align:left;
-  padding-left:40px;
+  padding-left:50px;
 }
+
 
 /* Contenedor de video */
 .video{
   display:flex;
   justify-content:center;
   padding:50px;
+  width:100%;
 }
+
 
 .inicio button{
   margin-left:150px;
@@ -120,24 +138,30 @@ p{
   font-family:'Lexend',sans-serif;
 }
 
+
 .inicio button:hover{
   background-color:#707070;
 }
 
+
 /* ================== ESTILO DEL ACORDEÓN ================== */
+
 
 .navbar-toggler{
   border-color:#df007a;
 }
 
+
 .navbar-toggler-icon{
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(226,85,163,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
 
 h3{
   padding-left:20px;
   color:#141414;
 }
+
 
 /* Fondo del acordeón */
 .accordion-item{
@@ -145,8 +169,9 @@ h3{
   border:none;
   margin-bottom:10px;
   border-radius:10px;
-  overflow:hidden; 
+  overflow:hidden;
 }
+
 
 /* Encabezado de cada item */
 .accordion-button{
@@ -154,8 +179,9 @@ h3{
   font-size:1.1rem;
   padding:15px 20px;
   border:none;
-  box-shadow:none; 
+  box-shadow:none;
 }
+
 
 /* Hover */
 .accordion-button:hover{
@@ -163,11 +189,13 @@ h3{
   color:#e7e7e7;
 }
 
+
 /* Activo */
 .accordion-button:not(.collapsed){
   background-color:#e255a3;
   color:#e7e7e7;
 }
+
 
 /* Cuerpo */
 .accordion-body{
@@ -178,10 +206,12 @@ h3{
   padding:20px;
 }
 
+
 #accordionPreguntas{
   margin-left:20px;
   margin-right:20px;
 }
+
 
 /* ================== FOOTER ================== */
 .footer {
@@ -197,6 +227,7 @@ h3{
   margin-top: 70px;
 }
 
+
 /* Marca o título */
 .footer-brand {
   font-family: 'Lexend', sans-serif;
@@ -206,6 +237,7 @@ h3{
   letter-spacing: 0.5px;
 }
 
+
 /* Contenedor de redes sociales */
 .footer-social {
   display: flex;
@@ -214,15 +246,18 @@ h3{
   gap: 18px;
 }
 
+
 /* Íconos de redes */
 .footer-social img {
   width: 60px;
-  height: 70px;
+  height: 75px;
 }
+
 
 .footer-social img:hover {
   transform: scale(1.1);
 }
+
 
 /* Texto legal */
 .footer-legal {
@@ -237,7 +272,9 @@ h3{
   font-family: 'Lexend', sans-serif;
 }
 
+
 /* ================== PÁGINA NOSOTRAS ================== */
+
 
 /* Subtítulo h2 */
 .tituloNosotras{
@@ -248,9 +285,11 @@ h3{
   text-align:center;
 }
 
+
 body:not(.nosotrasBody){
   background-color:#cecdcd;
 }
+
 
 .nosotrasBody{
   background-image:url("./imagenes/FondoPrincipal.jpg");
@@ -259,6 +298,21 @@ body:not(.nosotrasBody){
   background-repeat:no-repeat;
   background-attachment:fixed;
   margin:0;
+}
+
+/* Texto sobre nosotras */
+
+.sobre{
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.6; 
+}
+
+.sobre p{
+  margin: 8px 0; 
 }
 
 /* Galería */
@@ -281,10 +335,12 @@ body:not(.nosotrasBody){
 }
 
 .galeria img:hover{
-  transform:scale(1.05); 
+  transform:scale(1.05);
 }
 
+
 /* ================== PÁGINA PLAYLIST ================== */
+
 
 .tituloPlaylist{
   color:#e255a3;
@@ -294,10 +350,12 @@ body:not(.nosotrasBody){
   text-align:center;
 }
 
+
 .playlists{
   width:min(1100px,92%);
   margin:24px auto;
 }
+
 
 /* 3 columnas */
 .grid-3{
@@ -307,16 +365,19 @@ body:not(.nosotrasBody){
   gap:20px;
 }
 
+
 /* Tarjeta spotify */
 .spotify-card{
   border-radius:18px;
-  overflow:hidden; 
+  overflow:hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .spotify-card:hover {
   transform: scale(1.03);
 }
+
 
 /* Iframe */
 .spotify-card iframe{
@@ -326,7 +387,9 @@ body:not(.nosotrasBody){
   border:0;
 }
 
+
 /* ================== PÁGINA DE CONTACTO ================== */
+
 
 /* Tarjeta del formulario */
 .card-form{
@@ -337,15 +400,17 @@ body:not(.nosotrasBody){
   background-color:#f1efef;
 }
 
+
 /* Listas y filas */
-.form-list{ 
-  list-style:none; 
-  padding:0; 
-  margin:0; 
+.form-list{
+  list-style:none;
+  padding:0;
+  margin:0;
 }
-.form-row{ 
-  margin-bottom:16px; 
+.form-row{
+  margin-bottom:16px;
 }
+
 
 /* Etiquetas */
 label{
@@ -357,6 +422,7 @@ label{
   letter-spacing:.2px;
 }
 
+
 /* Inputs & textarea */
 input,textarea{
   width:100%;
@@ -367,11 +433,13 @@ input,textarea{
   font-size:15px;
 }
 
+
 /* Focus */
 input:focus,textarea:focus{
   outline:none;
   border-color:#f7a3d4;
 }
+
 
 /* Botón primario */
 .btn-primary{
@@ -389,45 +457,50 @@ input:focus,textarea:focus{
   background:#f552ae;
 }
 
+
 /* ===== Sticky footer (todas las páginas) ===== */
 body{
-  min-height:720px; 
+  min-height:720px;
   display:flex;
   flex-direction:column;
 }
-main{ 
-  flex:1 0 auto; 
+main{
+  flex:1 0 auto;
 }
-.footer{ 
-  flex-shrink:0; 
+.footer{
+  flex-shrink:0;
 }
+
 
 /*  Para que el texto sea visible con el menú hamburguesa (≤990px) */
 @media (max-width:990px){
   .navbar-brand{
   color: #000;
-  text-shadow: 
+  text-shadow:
     -1px -1px 0 #e255a3,
      1px  1px 0 #e255a3;
 }
-  .navbar{ 
-    padding:8px 16px; 
+  .navbar{
+    padding:8px 16px;
   }
 
-  .navbar-collapse{ 
-    text-align:right; 
+  .navbar-collapse{
+    text-align:right;
   }
-  .navbar-nav{ 
-    margin-left:auto; 
-    align-items:flex-end; 
+  .navbar-nav{
+    margin-left:auto;
+    align-items:flex-end;
   }
-  .navbar-nav .nav-link{ 
-    text-align:right; 
-    justify-content:flex-end; 
+  .navbar-nav .nav-link{
+    text-align:right;
+    justify-content:flex-end;
   }
 }
+
+
 /* ================== CELULARES (≤576px) ================== */
 @media (max-width:576px){
+
 
   /* Márgenes laterales cómodos */
   main,section,.video,.playlists,.card-form,#accordionPreguntas,.galeria,.footer{
@@ -435,23 +508,26 @@ main{
     padding-right:20px;
   }
 
+
   /* Tipografías y espaciados */
-  h1{ 
-    margin:16px; 
-    padding-left:0; 
+  h1{
+    margin:16px;
+    padding-left:0;
     font-size:32px; }
-  h2{ 
-    font-size:18px; 
+  h2{
+    font-size:18px;
   }
-  p{ 
-    font-size:15px; 
-    margin:10px 0; 
+  p{
+    font-size:15px;
+    margin:10px 0;
   }
-  .inicio p{ 
-    padding-left:0; 
+  .inicio p{
+    padding-left:0;
   }
 
-  .video{ padding:12px 0; }
+  .video{ 
+    padding:12px 0; 
+  }
 
   .inicio button{
     margin:16px 0 24px 0;
@@ -462,29 +538,32 @@ main{
     max-width:250px;
   }
 
+
   /* MÚSICA */
-  .playlists{ 
-    margin-bottom:0; 
-    padding-bottom:8px; 
+  .playlists{
+    margin-bottom:0;
+    padding-bottom:8px;
   }
-  .grid-3{ 
-    grid-template-columns:1fr; 
-    gap:16px; 
-    margin-top:20px; 
+  .grid-3{
+    grid-template-columns:1fr;
+    gap:16px;
+    margin-top:20px;
   }
-  .spotify-card:last-child{ 
-    margin-bottom:0; 
+  .spotify-card:last-child{
+    margin-bottom:0;
   }
-  .spotify-card iframe{ 
-    height:210px; 
+  .spotify-card iframe{
+    height:210px;
   }
-  
+ 
+
   /*efecto touch para celulares*/
   .spotify-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 18px;
     overflow: hidden;
   }
+
 
   /* NOSOTRAS */
   .galeria{
@@ -494,32 +573,35 @@ main{
     max-width:100%;
     margin-bottom:8px;
   }
-  .galeria img{ 
-    height:140px; 
+  .galeria img{
+    height:140px;
   }
 
+
 /* CONTACTO */
-  .card-form{ 
-    margin-bottom:8px; 
+  .card-form{
+    margin-bottom:8px;
   }
 
 /* ===== empujar el footer en todas las paginas ===== */
   body{
     margin: 0;
     display: flex;
+    height: 100%;
     flex-direction: column;
     min-height: 100vh;    
   }
 
-  main{ 
-    flex: 1; 
-  }       
-  .footer{ 
-    margin-top: auto; 
-    flex-shrink: 0; 
+  main{
+    flex: 1;
+  }      
+  .footer{
+    margin-top: auto;
+    flex-shrink: 0;
   }
 
-/* Footer */
+
+/* FOOTER */
   .footer {
     flex-direction: column;
     text-align: center;
@@ -541,22 +623,19 @@ main{
     font-size: 13px;
   }
 
+
   /* INDEX */
   .imagenFondo{
     background-size:cover;
     background-position:bottom right 25%;
-    min-height:600px; 
-    width:100%;       
+    min-height:600px;
+    width:100%;      
   }
   .inicio{
     padding-top:50px;
     padding-bottom:16px;
   }
-  h1{
-    margin-top:0;
-    padding-left:0;
-    font-size:65px;
-  }
+ 
   .inicio p{
     font-size:20px;
     padding-left:0;
@@ -568,4 +647,5 @@ main{
     max-width:240px;
   }
  }
-  
+ 
+
