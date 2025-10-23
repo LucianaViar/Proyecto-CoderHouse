@@ -1,0 +1,72 @@
+@use "./general" as *;
+
+/* ================== PÁGINA DE CONTACTO ================== */
+
+/* Tarjeta del formulario */
+.card-form{
+  width: min(680px, 92%);
+  margin: 0 auto 48px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #f1efef;
+  @extend %border-top-brand;               
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);  
+}
+
+/* Listas y filas */
+.form-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .form-row{ margin-bottom: 16px; }
+}
+
+/* Etiquetas */
+label{
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-family: $ff-sans;
+  color: #ff61ca;
+  letter-spacing: .2px;
+}
+
+/* Inputs & textarea */
+input,
+textarea{
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  font-family: $ff-sans;
+  font-size: 15px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+
+  &:focus{
+    outline: none;
+    border-color: $color-brand;                   
+    box-shadow: 0 0 0 3px #f79bd8;    
+  }
+
+  &::placeholder{ color: #8a8a8a; }
+}
+
+textarea{
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Botón primario */
+.btn-primary{
+  @extend %btn-base;     
+  border-radius: 12px;
+  font-weight: 700;
+  background: #f7a3d4;
+  color: #1f1f1f;
+
+  &:hover{
+    background: #f552ae;
+    color: #fff;
+  }
+}

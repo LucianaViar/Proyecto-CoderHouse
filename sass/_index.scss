@@ -1,0 +1,194 @@
+@use "./general" as *;
+
+/* locales */
+@mixin btn($bg, $fg: #1f1f1f) {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $ff-sans;
+  background: $bg;
+  color: $fg;
+}
+
+/* animación */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ================== PÁGINA INICIO ================== */
+
+/* Fondo de toda la página */
+body { background-color: $color-bg; }
+
+/* ================== NAVEGADOR ================== */
+.navbar {
+  background: transparent !important;
+
+  .navbar-brand {
+    color: $color-brand;
+    font-family: $ff-sans;
+    font-size: 30px;
+  }
+
+  .nav-link {
+    color: $color-light;
+    font-family: $ff-sans;
+
+    &:hover,
+    &.active { color: $color-brand; }
+  }
+
+  .navbar-nav > li { margin-right: 30px; }
+
+  .navbar-toggler {
+    border-color: #df007a;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(226,85,163,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: #a7a5a2 !important;
+
+  .dropdown-item {
+    color: #353535;
+    font-family: $ff-sans;
+
+    &:hover { background-color: #f7a3d4; }
+  }
+}
+
+/* ================== CONTENIDO DEL INICIO ================== */
+
+.imagenFondo{
+  background: {
+    image: url("../imagenes/FondoPrincipal.jpg");
+    size: cover;
+    position: center;
+  }
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+
+  /* ocupar todo el ancho del viewport */
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding: 0 !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Títulos y texto generales (px) */
+h1 {
+  text-align: left;
+  margin-top: 85px;
+  padding-left: 50px;
+  position: relative;
+  color: #ffffff;
+  font-family: $ff-script;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 1.05;
+  animation: fade-up .5s ease both;
+}
+
+h2 {
+  color: #f1eddf;
+  font-family: $ff-sans;
+  font-size: 25px;
+  padding: 10px 1px 0;
+  text-align: center;
+}
+
+p {
+  color: $color-dark;
+  font-family: $ff-sans;
+  font-size: 23px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Párrafos dentro de .inicio */
+.inicio {
+  p {
+    text-align: left;
+    padding-left: 50px;
+    animation: fade-up .6s ease both;
+  }
+
+  button {
+    margin-left: 190px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    @include btn(#e255a3a8, #ffffff);
+
+    &:hover {
+      background-color: #707070;
+      color: #ffffff;
+    }
+
+    animation: fade-up .7s ease both;
+  }
+}
+
+/* Contenedor de video */
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+}
+
+/* ================== ESTILO DEL ACORDEÓN ================== */
+h3 {
+  padding-left: 20px;
+  color: $color-dark;
+}
+
+#accordionPreguntas {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.accordion-item {
+  background-color: #e0e0e0;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .accordion-button {
+    color: #2b2a2a;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    border: none;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $color-brand;
+      color: #e7e7e7;
+    }
+
+    &:not(.collapsed) {
+      background-color: $color-brand;
+      color: #e7e7e7;
+    }
+  }
+
+  .accordion-body {
+    background-color: #e7e7e7;
+    color: #1a1919;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 20px;
+  }
+}

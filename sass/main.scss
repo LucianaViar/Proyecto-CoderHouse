@@ -1,0 +1,14 @@
+// Variables, footer y mobile
+@use "./general" as *;
+
+// Pagina principal
+@use "./index";
+
+// Pagina nosotras
+@use "./nosotras";
+
+// Pagina contacto
+@use "./contacto";
+
+// Pagina playlist
+@use "./musica";

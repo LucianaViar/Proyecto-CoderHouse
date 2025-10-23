@@ -1,0 +1,50 @@
+@use "./general" as *;
+
+/* ================== PÁGINA PLAYLIST ================== */
+
+/* Título */
+.tituloPlaylist{
+  color: $color-brand;
+  font-family: $ff-sans;
+  font-size: 45px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Contenedor */
+.playlists{
+  width: min(1100px, 92%);
+  margin: 24px auto;
+  padding: 0 0 8px 0; 
+}
+
+/* Grilla 3 columnas en desktop */
+.grid-3{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas Spotify */
+.spotify-card{
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: $color-brand;                  
+  transition: transform .25s ease, box-shadow .25s ease;
+
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  }
+
+  /* Iframe embebido */
+  iframe{
+    display: block;
+    width: 100%;
+    height: 400px;  
+    border: 0;
+  }
+}
+
+
