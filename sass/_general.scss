@@ -12,9 +12,8 @@ $bp-sm: 576px;   // mobile
 $bp-lg: 990px;   // navbar
 
 
-// =============== PLACEHOLDERS / UTILIDADES ===============
-
-// Botón base 
+/* =============== PLACEHOLDERS / UTILIDADES ===============*/
+/*  Botón base  */
 %btn-base {
   display: inline-block;
   padding: 10px 18px;
@@ -27,10 +26,10 @@ $bp-lg: 990px;   // navbar
   &:hover { transform: translateY(-1px); }
 }
 
-// Borde superior rosa 
+/* Borde superior rosa  */
 %border-top-brand { border-top: 4px solid $color-brand; }
 
-// Map + @each
+/* Map + @each*/
 $util-borders: (
   brand: $color-brand,
   dark:  $color-dark
@@ -39,14 +38,14 @@ $util-borders: (
   .u-border-#{$name} { border: 4px solid #{$clr}; }
 }
 
-// Imagen fluida
+/*  Imagen fluida*/
 .img-fluid { max-width: 100%; 
   height: auto; 
   display: block; 
 }
 
 
-// ================== STICKY FOOTER BASE ==================
+ /* ================== STICKY FOOTER BASE ================== */
 html { height: 100%; }
 
 body{
@@ -61,7 +60,7 @@ main{ flex: 1 0 auto; }
 .footer{ flex-shrink: 0; }
 
 
-// ================== FOOTER ==================
+/*  ================== FOOTER ================== */
 .footer {
   background-color: #0f0f10;
   color: $color-light;
@@ -74,7 +73,7 @@ main{ flex: 1 0 auto; }
   @extend %border-top-brand; 
   margin-top: 70px;
 
-  // Marca o título
+  //Marca
   .footer-brand {
     font-family: $ff-sans;
     font-size: 24px;
@@ -83,7 +82,7 @@ main{ flex: 1 0 auto; }
     letter-spacing: 0.5px;
   }
 
-  // Redes
+  // Redes 
   .footer-social {
     display: flex;
     align-items: center;
@@ -112,16 +111,16 @@ main{ flex: 1 0 auto; }
 }
 
 
-// ================== MOBILE (≤576px) ==================
+/* ================== MOBILE (≤576px) ================== */
 @media (max-width: $bp-sm){
 
-  // Márgenes laterales 
-  main, section, .video, .playlists, .card-form, #accordionPreguntas, .galeria, .footer{
+/* Márgenes laterales */
+main, section, .video, .playlists, .card-form, #accordionPreguntas, .galeria, .footer{
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  // Tipografías base
+  /* Tipografías base */
   h1{ margin: 16px; 
     padding-left: 0; 
     font-size: 32px; 
@@ -145,7 +144,7 @@ main{ flex: 1 0 auto; }
       align-self: center !important;      
   }
 
-  // Playlists
+  /* Playlists */
   .grid-3{
     grid-template-columns: 1fr !important; // gana la cascada frente a _musica.scss
     gap: 16px;
@@ -161,7 +160,7 @@ main{ flex: 1 0 auto; }
     iframe{ height: 210px; }
   }
 
-  // Galería
+  /* Galería */
   .galeria{
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 12px;
@@ -172,10 +171,10 @@ main{ flex: 1 0 auto; }
     img{ height: 140px; }
   }
 
-  // Contacto
+  /* Contacto */
   .card-form{ margin-bottom: 8px; }
 
-  // Footer — NEGRO con BORDES ROSAS 
+  /* Footer — NEGRO con BORDES ROSAS */
   .footer{
     background-color: #0f0f10;
     border-top: 4px solid $color-brand;    
@@ -200,7 +199,7 @@ main{ flex: 1 0 auto; }
 }
 
 
-// ================== NAVBAR (≤990px) ==================
+/* ================== NAVBAR (≤990px) ================== */
 @media (max-width: $bp-lg){
 
   header .navbar .navbar-brand{

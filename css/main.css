@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* =============== PLACEHOLDERS / UTILIDADES ===============*/
+/*  Botón base  */
 .btn-primary {
   display: inline-block;
   padding: 10px 18px;
@@ -13,10 +15,12 @@
   transform: translateY(-1px);
 }
 
+/* Borde superior rosa  */
 .card-form, .footer {
   border-top: 4px solid #e255a3;
 }
 
+/* Map + @each*/
 .u-border-brand {
   border: 4px solid #e255a3;
 }
@@ -25,12 +29,14 @@
   border: 4px solid #141414;
 }
 
+/*  Imagen fluida*/
 .img-fluid {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+/* ================== STICKY FOOTER BASE ================== */
 html {
   height: 100%;
 }
@@ -51,6 +57,7 @@ main {
   flex-shrink: 0;
 }
 
+/*  ================== FOOTER ================== */
 .footer {
   background-color: #0f0f10;
   color: #f8f8f8;
@@ -94,11 +101,14 @@ main {
   font-family: "Lexend", sans-serif;
 }
 
+/* ================== MOBILE (≤576px) ================== */
 @media (max-width: 576px) {
+  /* Márgenes laterales */
   main, section, .video, .playlists, .card-form, #accordionPreguntas, .galeria, .footer {
     padding-left: 20px;
     padding-right: 20px;
   }
+  /* Tipografías base */
   h1 {
     margin: 16px;
     padding-left: 0;
@@ -124,6 +134,7 @@ main {
     margin: 16px auto 30px !important;
     align-self: center !important;
   }
+  /* Playlists */
   .grid-3 {
     grid-template-columns: 1fr !important;
     gap: 16px;
@@ -140,6 +151,7 @@ main {
   .spotify-card iframe {
     height: 210px;
   }
+  /* Galería */
   .galeria {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 12px;
@@ -150,9 +162,11 @@ main {
   .galeria img {
     height: 140px;
   }
+  /* Contacto */
   .card-form {
     margin-bottom: 8px;
   }
+  /* Footer — NEGRO con BORDES ROSAS */
   .footer {
     background-color: #0f0f10;
     border-top: 4px solid #e255a3;
@@ -174,6 +188,7 @@ main {
     font-size: 13px;
   }
 }
+/* ================== NAVBAR (≤990px) ================== */
 @media (max-width: 990px) {
   header .navbar .navbar-brand {
     color: #141414 !important;
@@ -195,8 +210,6 @@ main {
     padding-right: 0;
   }
 }
-/* locales */
-/* animación */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -258,7 +271,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  /* ocupar todo el ancho del viewport */
   width: 100vw;
   margin-inline: calc(50% - 50vw);
   padding: 0 !important;
@@ -377,11 +389,12 @@ h3 {
 /* ================== PÁGINA NOSOTRAS ================== */
 /* Subtítulo h2 */
 .tituloNosotras {
-  color: #e255a3;
+  color: #ff60b8;
   font-family: "Lexend", sans-serif;
   font-size: 25px;
   margin-top: 30px;
-  text-align: center;
+  text-align: left;
+  padding-left: 40px;
 }
 
 /* Fondo para la página nosotras */
@@ -396,20 +409,12 @@ h3 {
 }
 
 /* Texto sobre nosotras */
-.sobre {
-  max-width: 1100px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-  line-height: 1.6;
-  /* párrafos */
-}
 .sobre p {
-  margin: 8px 0;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 20px;
+  max-width: 70ch;
+  text-align: left;
+  margin-right: 40px;
+  padding-left: 40px;
 }
 
 /* Galería */
@@ -538,9 +543,6 @@ textarea {
 .spotify-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-.spotify-card {
-  /* Iframe embebido */
 }
 .spotify-card iframe {
   display: block;
