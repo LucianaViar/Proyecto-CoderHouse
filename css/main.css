@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* ================== FIX GLOBAL ================== */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* =============== PLACEHOLDERS / UTILIDADES ===============*/
 /*  Botón base  */
 .btn-primary {
@@ -124,6 +130,7 @@ main {
   }
   .inicio p {
     padding-left: 0;
+    font-size: 20px;
   }
   .video {
     padding: 12px 0;
