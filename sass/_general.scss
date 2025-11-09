@@ -1,3 +1,4 @@
+
 /* ================== FIX GLOBAL ================== */
 html, body {
   width: 100%;
@@ -50,8 +51,7 @@ $util-borders: (
   display: block; 
 }
 
-
- /* ================== STICKY FOOTER BASE ================== */
+/* ================== STICKY FOOTER BASE ================== */
 html { height: 100%; }
 
 body{
@@ -117,130 +117,6 @@ main{ flex: 1 0 auto; }
 }
 
 
-/* ================== MOBILE (≤576px) ================== */
-@media (max-width: $bp-sm){
 
-/* Márgenes laterales */
-main, section, .video, .playlists, .card-form, #accordionPreguntas, .galeria, .footer{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /* Tipografías base */
-  h1{ 
-    margin: 16px; 
-    padding-left: 0; 
-    font-size: 32px; 
-    text-align: center;
-  }
-
-  h2{ font-size: 18px; }
-
-  p { 
-    font-size: 15px; 
-    margin: 10px 0; 
-  }
-
-  .inicio p{ 
-    padding-left: 0;
-    font-size: 20px;
-  }
-
-  .video{ padding: 12px 0; }
-
-  .inicio button{
-      display: block !important;
-      width: min(80%, 250px);
-      margin: 16px auto 30px !important; 
-      align-self: center !important;      
-  }
-
-  /* Playlists */
-  .grid-3{
-    grid-template-columns: 1fr !important; // gana la cascada frente a _musica.scss
-    gap: 16px;
-    margin-top: 20px;
-  }
-
-  .spotify-card{
-    transition: transform .3s ease, box-shadow .3s ease;
-    border-radius: 18px;
-    overflow: hidden;
-
-    &:last-child{ margin-bottom: 0; }
-    iframe{ height: 210px; }
-  }
-
-  /* Galería */
-  .galeria{
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-    padding: 16px 0;
-    max-width: 100%;
-    margin-bottom: 8px;
-
-    img{ height: 140px; }
-  }
-
-  /* Contacto */
-  .card-form{ margin-bottom: 8px; }
-
-  /* Footer — NEGRO con BORDES ROSAS */
-  .footer{
-    background-color: #0f0f10;
-    border-top: 4px solid $color-brand;    
-    border-bottom: 4px solid $color-brand; 
-    flex-direction: column;
-    text-align: center;
-    padding: 24px 16px;
-    margin-top: 60px;
-
-    .footer-brand{ font-size: 22px; }
-
-    .footer-social img{ 
-      width: 40px; 
-      height: 50px; 
-    }
-
-    .footer-legal{ 
-      justify-content: center; 
-      font-size: 13px; 
-    }
-  }
-}
-
-
-/* ================== NAVBAR (≤990px) ================== */
-@media (max-width: $bp-lg){
-
-  header .navbar .navbar-brand{
-    color: $color-dark !important; 
-    text-shadow:
-      -1px -1px 0 $color-brand,
-       1px -1px 0 $color-brand,
-      -1px  1px 0 $color-brand,
-       1px  1px 0 $color-brand; 
-  }
-
-  .navbar-collapse{
-    background: transparent;   
-    border-top: 0; 
-    padding: 8px 16px;
-    text-align: right;
-  }
-
-  .navbar-nav{
-    margin-left: auto;
-    align-items: flex-end;
-
-    .nav-link{
-      text-align: right;
-      justify-content: flex-end;
-      padding-right: 0;
-    
-    }
-
-  }
-}
-
+ 
 

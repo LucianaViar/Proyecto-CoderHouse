@@ -1,4 +1,4 @@
-// Variables, footer y mobile
+// Variables y footer 
 @use "./general" as *;
 
 // Pagina principal
@@ -12,3 +12,6 @@
 
 // Pagina playlist
 @use "./musica";
+
+// Responsive
+@use "./responsive";

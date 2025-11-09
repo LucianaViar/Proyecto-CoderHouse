@@ -88,7 +88,7 @@ body { background-color: $color-bg; }
 /* Títulos y texto generales (px) */
 h1 {
   text-align: left;
-  margin-top: 85px;
+  margin-top: 100px;
   padding-left: 50px;
   position: relative;
   color: #ffffff;
@@ -118,9 +118,11 @@ p {
 /* Párrafos dentro de .inicio */
 .inicio {
   p {
-    text-align: left;
-    padding-left: 50px;
     animation: fade-up .6s ease both;
+    font-size: 18px;
+    max-width: 70ch;     
+    text-align: left;
+    padding-left: 50px; 
   }
 
   button {
